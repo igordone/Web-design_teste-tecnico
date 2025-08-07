@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="card-component.js"></script>
+    <title>GRI Institute</title>
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const card1 = new RepresentativeCard({
+            photo: "img/personal_photo.jpg",
+            flag: "img/br.svg",
+            name: "Armless John",
+            role: "Software Developer",
+            company: "GRI Institute",
+            companyLogo: "img/gri_institute_logo.jpg",
+            skills: "Servers, Web and Mobile",
+            progressPercent: 66
+        });
+
+        const container = document.getElementById("cards-container");
+        card1.appendTo(container);
+
+        setTimeout(() => {
+            card1.updateProgress(98);
+        }, 3000);
+    });
+</script>
+
+<body>
+    <div id="cards-container"></div>
+</body>
+
+</html>

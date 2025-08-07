@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fafafa;
+    width:100%;
+    overflow-x: hidden;
+}
+.main{
+    width:70%;
+}
+.title{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: bold;
+    color: #9A9A9A;
+    margin-bottom:-2%;
+    margin-left: 2%;
+    background-color: #ffffff;
+    width: fit-content;
+    border-radius: 50px;
+    box-shadow:#D3D3D3 0px 2px 2px 0px;
+    padding: 0.1rem 2rem;
+}
+.medal-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.card{
+    width:100%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding:2%;
+    padding-top: 3%;
+    box-shadow: #D3D3D3 0px 4px 4px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.star-icon{
+    width: 5%;
+}
+.content{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    gap: 3%;
+}
+.photo{
+    position: relative;
+    display: flex;
+    width: fit-content;
+}
+.personal-photo img.avatar {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.avatar{
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+.country-flag{
+    position:absolute;
+    width: 30%;
+    bottom: 0;
+    right:0;
+    border-radius: 50%;
+
+}
+.gri-logo{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #D3D3D3;
+    border-radius: 8px;
+}
+.gri-logo-img{
+    width: 100%;
+}
+.main-personal-info{
+    width: 100%;
+    display: flex;
+    gap:15%;
+}
+.personal-info{
+    width: 100%;
+}
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    color: #C1B281;
+    font-weight: bold;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+}
+.role{
+    color: #9A9A9A;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+.description{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:5%;
+}
+.skills{
+    font-weight:bold;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    color: #45507F;
+}
+.main-progress-bar{
+    margin-top:2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:2%;
+}
+.progress-bar{
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border: solid 1px #D3D3D3;
+    border-radius: 25px;
+}
+.bar{
+    height: 100%;
+    width: 66%;
+    background-color: #45507F;
+    border-radius: 25px 0px 0px 25px
+}
+.text{
+    width:20%;
+    display: flex;
+    gap: 5%;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    color: #000000;
+}
+.text-progress{
+    font-weight: bold;
+}
+
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3%;
+    gap: 2%;
+}
+.btn, .btn-chat {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    height: clamp(50px, 8vh, 90px);
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    height: 90px;
+    color: #CCB24D;
+    background-color: transparent;
+    border: solid 2px #CCB24D;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-chat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    height: 90px;
+    color: #ffffff;
+    background-color: #CCB24D;
+    border: solid 2px ;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.chat-icon{
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+    .title {
+        margin-bottom:-4%;
+    }
+    .card {
+        padding-top: 8% 3% 3% 3%;
+    }
+    .medal-icon {
+        width: 35px;
+        height: 35px;
+    }
+    .photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    .personal-photo {
+        position: relative;
+        display: inline-block;
+    }
+
+    .avatar {
+        width: 180px;
+        height: auto;
+        border-radius: 50%;
+        display: block;
+    }
+
+    .country-flag {
+        width: 50px;
+        height: auto;
+        border-radius: 50%;
+        right: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .description{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        width: 100%;
+
+    }
+    .progress-bar{
+        width: 70%;
+    }
+    .main-personal-info {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .gri-logo {
+        width: 85%;
+    }
+    .gri-logo-img {
+        width: 30%;
+        height: auto;
+    }
+    .buttons{
+        width: 100%;
+        margin-top: 3%;
+        gap: 0.2em;
+    }
+    .btn, .btn-chat {
+        width: 100%;
+        height: 50px;
+        font-size: clamp(1.2rem, 3vw, 2rem);
+    }
+    .chat-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
